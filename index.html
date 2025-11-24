@@ -10,7 +10,7 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>goit-markup-hw-05</title>
+    <title>goit-markup-hw-06</title>
 
     <link
       rel="stylesheet"
@@ -55,12 +55,98 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-mobil-header-icon"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu is-open">
+          <div class="container mobile-menu-container">
+            <button class="mobile-close-button" type="button">
+            <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+            </svg>          
+         </button>
+            <nav class="mobile-menu-nav">          
+            <ul class="mobile-menu-nav-list">
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link current" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link" href="">Portfolio</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav> 
+        <address class="mobile-contacts">
+          <ul class="mobile-contacts-nav">
+            <li class="mobile-contacts-item">
+              <a class="mobile-contacts-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="mobile-contacts-item">
+              <a class="mobile-contacts-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+        </address>
+        <div class="mobile-container-social">
+          <ul class="mobile-social-links">
+            <li class="mobile-social-links-item">
+              <a
+                href="#"
+                target="_blank"
+                class="mobile-social-links-item"
+              >
+                <svg class="icon-soc" width="24" height="24" fill="#f4f4fd">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-links-item">
+              <a
+                href="#"
+                target="_blank"
+                class="mobile-social-links-item">
+                <svg class="icon-soc" width="24" height="24" fill="#f4f4fd">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-links-item">
+              <a
+                href="#"
+                target="_blank"
+                class="mobile-social-links-item">
+                <svg class="icon-soc" width="24" height="24" fill="#f4f4fd">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-links-item">
+              <a
+                href="#"
+                target="_blank"
+                class="mobie-social-links-item"
+              >
+                <svg class="icon-soc" width="24" height="24" fill="#f4f4fd">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+          </div>
       </div>
     </header>
     <!--#endregion header-->
     <main>
       <!-- #region solutions -->
-      <section class="main-title-section">
+      <section class="main-title-section hidden">
         <div class="container container-solutions">
           <h1 class="main-title-head">Effective Solutions for Your Business</h1>
           <button class="button-order" type="button">Order Service</button>
@@ -69,7 +155,7 @@
       <!-- #endregion solutions -->
 
       <!-- #region solutions list -->
-      <section class="about-webstudio-section">
+      <section class="about-webstudio-section hidden">
         <div class="container">
           <h2 class="visually-hidden">solutions list</h2>
           <ul class="about-webstudio">
@@ -127,7 +213,7 @@
       <!-- #endregion solutions list -->
 
       <!-- #region our team -->
-      <section class="our-team">
+      <section class="our-team hidden">
         <div class="container">
           <h2 class="our-team-header">Our Team</h2>
           <ul class="our-team-list">
@@ -305,7 +391,7 @@
       <!-- #endregion our team -->
 
       <!--#region portfolio -->
-      <section class="portfolio">
+      <section class="portfolio hidden">
         <div class="container">
           <h2 class="our-portfolio">Our Portfolio</h2>
           <ul class="our-portfolio-nav">
@@ -428,11 +514,12 @@
         </div>
       </section>
       <!--#endregion portfolio -->
+           
     </main>
     <!--#region footer-->
 
     <footer>
-      <div class="container page-footer">
+      <div class="container page-footer hidden">
         <div class="footer-container">
           <a class="footer-logo" href="./index.html"
             >Web<span class="logo-part">Studio</span>
@@ -510,7 +597,7 @@
     <!--#endregion footer-->
 
     <!--#region modal-->
-    <div class="backdrop is-open">
+    <div class="backdrop is-open hidden">
       <div class="modal">
 
         <button class="modal-close-button" type="button">
