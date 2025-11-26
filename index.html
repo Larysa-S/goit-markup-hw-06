@@ -61,7 +61,7 @@
           </svg>
         </button>
       </div>
-      <div class="mobile-menu is-open">
+      <div class="mobile-menu">
           <div class="container mobile-menu-container">
             <button class="mobile-close-button" type="button">
             <svg class="modal-close-icon" width="8" height="8">
@@ -95,7 +95,7 @@
           </ul>
         </address>
         <div class="mobile-container-social">
-          <ul class="mobile-social-links">
+          <ul class="mobile-social-list">
             <li class="mobile-social-links-item">
               <a
                 href="#"
@@ -146,7 +146,7 @@
     <!--#endregion header-->
     <main>
       <!-- #region solutions -->
-      <section class="main-title-section hidden">
+      <section class="main-title-section">
         <div class="container container-solutions">
           <h1 class="main-title-head">Effective Solutions for Your Business</h1>
           <button class="button-order" type="button">Order Service</button>
@@ -155,7 +155,7 @@
       <!-- #endregion solutions -->
 
       <!-- #region solutions list -->
-      <section class="about-webstudio-section hidden">
+      <section class="about-webstudio-section">
         <div class="container">
           <h2 class="visually-hidden">solutions list</h2>
           <ul class="about-webstudio">
@@ -183,7 +183,7 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li class="about-webstudio-item">
+            <li class="about-webstudio-item the-last-webstudio-item">
               <div class="solution-box">
                 <svg class="icon-solution" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -195,7 +195,7 @@
                 opportunities and minimize risk.
               </p>
             </li>
-            <li class="about-webstudio-item">
+            <li class="about-webstudio-item the-last-webstudio-item">
               <div class="solution-box">
                 <svg class="icon-solution" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
@@ -213,13 +213,16 @@
       <!-- #endregion solutions list -->
 
       <!-- #region our team -->
-      <section class="our-team hidden">
+      <section class="our-team">
         <div class="container">
           <h2 class="our-team-header">Our Team</h2>
           <ul class="our-team-list">
             <li class="our-team-item">
               <img
                 src="./images/mark.jpg"
+                srcset="./images/mark-075-min.jpg 0.75x,
+                ./images/mark.jpg 1x, 
+                ./images/mark-2x-min.jpg 2x"
                 alt="mark"
                 height="260"
                 width="264"
@@ -261,7 +264,11 @@
               </div>
             </li>
             <li class="our-team-item">
-              <img src="./images/tom.jpg" alt="tom" height="260" width="264" />
+              <img src="./images/tom.jpg"
+              srcset="./images/tom-075-min.jpg 0.75x,
+              ./images/tom.jpg 1x, 
+              ./images/tom-2x-min.jpg 2x" 
+              alt="tom" height="260" width="264" />
               <div class="our-team-member-info-section">
                 <h3 class="our-team-member">Tom Ford</h3>
                 <p class="our-team-memeber-position">Frontend Developer</p>
@@ -301,6 +308,9 @@
             <li class="our-team-item">
               <img
                 src="./images/camila.jpg"
+                srcset="./images/camila-075-min.jpg o.75x,
+                ./images/camila.jpg 1x, 
+                ./images/camila-2x-min.jpg 2x"
                 alt="camila"
                 height="260"
                 width="264"
@@ -344,6 +354,9 @@
             <li class="our-team-item">
               <img
                 src="./images/daniel.jpg"
+                srcset="./images/daniel-075-min.jpg 0.75x,
+                ./images/daniel.jpg 1x, 
+                ./images/daniel-2x-min.jpg 2x"
                 alt="daniel"
                 height="260"
                 width="264"
@@ -391,7 +404,7 @@
       <!-- #endregion our team -->
 
       <!--#region portfolio -->
-      <section class="portfolio hidden">
+      <section class="portfolio">
         <div class="container">
           <h2 class="our-portfolio">Our Portfolio</h2>
           <ul class="our-portfolio-nav">
@@ -399,6 +412,9 @@
               <div class="our-portfolio-with-overlay">
                 <img
                   src="./images/banking-app.jpg"
+                  srcset="./images/banking-app-075-min.jpg 0.75x,
+                  ./images/banking-app.jpg 1x,
+                  ./images/banking-app-2x-min.jpg 2x"
                   alt="banking"
                   height="300"
                   width="360"
@@ -418,6 +434,9 @@
               <div class="our-portfolio-with-overlay">
                 <img
                   src="./images/cashless-pmnt.jpg"
+                  srcset="./images/cashless-pmnt-075-min.jpg 0.75x,
+                  ./images/cashless-pmnt.jpg 1x,
+                  ./images/cashless-pmnt-2x-min.jpg 2x"
                   alt="cashless"
                   height="300"
                   width="360"
@@ -437,6 +456,9 @@
               <div class="our-portfolio-with-overlay">
                 <img
                   src="./images/meditation-app.jpg"
+                  srcset=".images/meditation-app-075-min.jpg 0.75x,
+                  ./images/meditation-app.jpg 1x,
+                  ./images/meditation-app-2x-min.jpg 2x"
                   alt="meditation"
                   height="300"
                   width="360"
@@ -456,6 +478,9 @@
               <div class="our-portfolio-with-overlay">
                 <img
                   src="./images/taxi-serv.jpg"
+                  srcset=".images/taxi-serv-075-min.jpg 0.75x,
+                  ./images/taxi-serv.jpg 1x,
+                  ./images/taxi-serv-2x-min.jpg 2x"
                   alt="taxi-service"
                   height="300"
                   width="360"
@@ -475,6 +500,9 @@
               <div class="our-portfolio-with-overlay">
                 <img
                   src="./images/screen-ilstr.jpg"
+                  srcset="./images/screen-ilstr-075-min.jpg 0.75x,
+                  ./images/screen-ilstr.jpg 1x,
+                  ./images/screen-ilstr-2x-min.jpg 2x"
                   alt="screen-illustration"
                   height="300"
                   width="360"
@@ -494,6 +522,9 @@
               <div class="our-portfolio-with-overlay">
                 <img
                   src="./images/online-courses.jpg"
+                  srcset=".images/online-courses-075-min.jpg 0.75x,
+                  ./images/online-courses.jpg 1x,
+                  ./images/online-courses-2x-min.jpg 2x"
                   alt="online-courses"
                   height="300"
                   width="360"
@@ -519,7 +550,7 @@
     <!--#region footer-->
 
     <footer>
-      <div class="container page-footer hidden">
+      <div class="container page-footer">
         <div class="footer-container">
           <a class="footer-logo" href="./index.html"
             >Web<span class="logo-part">Studio</span>
@@ -597,7 +628,7 @@
     <!--#endregion footer-->
 
     <!--#region modal-->
-    <div class="backdrop is-open hidden">
+    <div class="backdrop is-open visually-hidden">
       <div class="modal">
 
         <button class="modal-close-button" type="button">
@@ -643,7 +674,6 @@
             <label class="form-label" for="user-comment">Comment</label>
             <textarea  class="comment-textarea" id="user-comment" name="user-comment" placeholder="Text input"></textarea> 
         </div>
-
         <div class="form-field-wrapper-policy">
           <input class="policy-checkbox visually-hidden" type="checkbox" id="user-privacy" name="user-privacy" value="true">
           <label for="user-privacy" class="checkbox-text">
@@ -655,10 +685,8 @@
             <a href="#" class="accent privacy-policy">
               Privacy Policy</a></label>
         </div>
-
-        <button class="button-order" type="submit">Send</button>
-        </form>  
-
+        <button class="button-order button-modal" type="submit">Send</button>
+        </form> 
       </div>
     </div>
 
